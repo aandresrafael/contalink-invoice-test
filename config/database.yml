@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: developer
+  password: UQpaA9TA
+  host: devtestdatabase.contalink.com
+  database: testinvoices
+
+development:
+  <<: *default
+test:
+  <<: *default
+production:
+  <<: *default

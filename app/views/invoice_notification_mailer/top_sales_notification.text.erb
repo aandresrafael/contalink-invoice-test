@@ -1,0 +1,7 @@
+Hello,
+
+This is the report with the top 10 days of sales:
+
+<% @top_days_sales.each do |day| %>
+  <%= day.date %> (<%= day.day_total %>)|
+<% end %>

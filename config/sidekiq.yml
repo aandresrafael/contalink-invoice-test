@@ -1,0 +1,5 @@
+:scheduler:
+  :schedule:
+    top_notifications:
+      cron: '0 7 * * * America/Mexico_City'   # Runs every day at 7 AM
+      class: SalesEmailNotificationJob
